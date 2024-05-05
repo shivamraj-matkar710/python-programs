@@ -1,0 +1,73 @@
+print("shree ganeshay namah")
+print("hello friends! i am AAYU an aging portal")
+print("my work is to calculate your age")
+print("------------------------------------------")
+nn = str(input("may i know your good name = "))
+print()
+kk = str(input("are you Shivam's friend (yes/no) = "))
+opinionlist = ["yes"]
+print("------------------------------------------")
+if (kk) in opinionlist:
+    print("great you are", nn, "and you are Shivam's friend")
+else:
+    print("no worries this gives him an opportunity to make you his friend and the time will surely witness", nn,
+          "and Shivam being good friends")
+print("------------------------------------------")
+print("now let's we be good friends")
+print("now i am going to calculate age of my new friend", nn)
+print("------------------------------------------")
+print("for this i need your date of birth")
+print("------------------------------------------")
+dd = int(input("please enter your date = "))
+mm = int(input("please enter your month = "))
+yy = int(input("please enter your year = "))
+print("------------------------------------------")
+v1 = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november",
+      "december"]
+v2 = ["makar sankranti", "mahashiv ratri", "gudi padwa", "mahaveer jayanti", "buddha pornima", "Eid ul fitr",
+      "sankashti chaturthi", "raksha bandhan", "janmashtami", "diwali", "bhau bij", "christmas"]
+print("amazing you are from", v1[mm - 1], "in it we celebrate", v2[mm - 1])
+print("------------------------------------------")
+print("now we will go forward to calculate your age for this i need your help")
+print("------------------------------------------")
+print()
+c = int(input("enter today's date = "))
+b = int(input("enter the month going on = "))
+cc =int(input("enter the year going on = "))
+print("------------------------------------------")
+print()
+m = 12 - mm
+fm = b - mm
+y = cc - yy
+d = c - dd
+z = fm
+if fm < 0:
+    z = 12 + fm
+    y=y-1
+if d < 0:
+    z=z-1
+    d=d+30
+print("you are", y, "years", z, "months and", d, "days old")
+if z==0 and d==0:
+      print()
+      print("Happy Birthday to you!!! ")
+print("------------------------------------------")
+print()
+monthsalive = y * 12 + z
+daysalive = y * 365 + z * 30 + d
+hoursalive = daysalive * 24
+minutesalive = hoursalive * 60
+secondsalive = minutesalive * 60
+print("you have spent")
+print(monthsalive, "months")
+print(daysalive, "days")
+print(hoursalive, "hours")
+print(minutesalive, "minutes")
+print(secondsalive, "seconds on earth and now also the time is passing ")
+print("------------------------------------------")
+print(
+    "i remember Captain Vikram Batra words, that says, jindagi badi honi chaheye lambi nahi,live your life for a good and social cause ,may you stand the test of time and you live a happy healthy life ")
+print("----------------------------------------")
+print("best wishes from Shivam to", nn)
+print("thank you")
+print("jai hind")

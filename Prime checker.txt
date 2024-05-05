@@ -1,0 +1,9 @@
+x=0
+a=int(input("enter your number = "))
+for i in range(2,a):
+    if a%i==0:
+        x=1
+if x==0:
+    print("prime")
+else:
+    print("composit")

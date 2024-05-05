@@ -1,0 +1,64 @@
+print("||ॐ  श्री गणेशाय नम:|")
+print("-------------------------------------------")
+print("Hello to this Statistical Program")
+print("___________________________________________")
+a=str(input("Enter number = "))
+print("___________________________________________")
+print("Mean     ------->          press=1 : ")
+print("Median   ------->          press=2 : ")
+print("Mode     ------->          press=3 : ")
+print("===========================================")
+while(1):
+    choice=int(input("what you want to find = "))
+    print()
+    print("===========================================")
+    l1=[]
+    for i in a:
+        l1.append(i)
+        l1.sort()
+    e=[]
+    def static_mean(xxx):
+        xxx=a
+        sum=0
+        for i in a:
+            bint=int(i)
+            sum=sum+bint
+        b=sum/len(a)
+        print("your mean becomes = ",b)
+    def static_median(yyy):
+        yyy=a
+        print("for median we had to sort data either in assending order or in decending order as = ",l1)
+        if len(l1)%2!=0:
+            bb=(len(l1)+1)/2
+            print(" median value is",l1[int(bb)-1])
+        else:
+            cc=len(l1)/2
+            #dd=(l1[cc-1]+l1[cc]
+            for i in range(1,-1,-1):
+                e.append(l1[int(cc)-i])
+                
+            sum=0
+            for i in e:
+                medianint=int(i)
+                sum=sum+medianint
+            dd=sum/2
+            print("median value is ",dd)
+    def static_mode(zzz):
+        zzz=a
+        repeat=[]
+        for i in l1:
+            if l1.count(i)>1:
+                repeat.append(i)
+        select=list(set(repeat))
+        select.sort()
+        if len(select)>1:
+            print("their exist",len(select),"mod value these are = ",select)
+        else:
+            print("mod value is = ",select)
+    if choice==1:
+        static_mean(a)
+    if choice==2:
+        static_median(a)
+    if choice==3:
+        static_mode(a)
+    print("_______________________________________")
